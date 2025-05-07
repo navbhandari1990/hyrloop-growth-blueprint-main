@@ -36,9 +36,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
-        <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-hyrloop-blue-dark">
-            Hyrloop
+          <div className="flex items-center">
+          <a href="#" >
+            <img 
+              src="/images/logo_hyrloop.webp" 
+              alt="Hyrloop Logo"
+              className="h-16" />
           </a>
         </div>
 
