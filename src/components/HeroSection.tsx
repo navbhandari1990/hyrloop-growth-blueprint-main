@@ -43,7 +43,7 @@ const HeroSection = () => {
           </div>
           <div className="hidden lg:block relative rounded-xl overflow-hidden shadow-2xl animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <img 
-              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+              src="/images/hero_banner1.png"
               alt="HR Team Collaboration" 
               className="w-full h-auto object-cover"
             />
