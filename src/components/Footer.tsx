@@ -56,11 +56,11 @@ const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
-            <address className="not-italic text-gray-300 space-y-3">
-              <p>Email: contact@hyrloop.com</p>
-              <p>Phone: (555) 123-4567</p>
-              <p>123 Startup Street</p>
-              <p>Innovation City, 94105</p>
+            <address className="not-italic text-gray-300 space-y-2">
+              <p>Flat No. 3, Type 2, Block 7, RDMC</p>
+              <p>Banda, UP 210001</p>
+              <p>Email: info@hyrloop.com</p>
+              <p>Phone: +91 95556 24372</p>
             </address>
           </div>
         </div>

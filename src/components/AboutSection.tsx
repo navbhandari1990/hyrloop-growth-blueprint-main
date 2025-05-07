@@ -2,7 +2,7 @@
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Users, Handshake, Briefcase, Shield, CheckCircle, CheckCheck, Award, Target } from 'lucide-react';
-
+import { Sparkle } from '@phosphor-icons/react';
 const AboutSection = () => {
   const expertiseAreas = [
     { name: 'Talent Acquisition', icon: Users },
@@ -12,6 +12,7 @@ const AboutSection = () => {
     { name: 'People Strategy', icon: Handshake },
   ];
 
+  
   const hrSolutions = [
     {
       title: "Scale Your Team Confidently",
@@ -79,14 +80,28 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              At Hyrloop, we bring deep, hands-on HR expertise specifically tailored for startups and scale-ups. 
-              We understand that startups face unique challenges when it comes to building and managing their teams.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our team of HR specialists has worked with companies at every stage—from pre-seed startups to 
-              established tech companies—giving us the practical knowledge to help your business grow sustainably.
-            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                At hyrloop, we are a team of seasoned HR professionals bringing over a decade of hands-on
+                experience in building and scaling startups. We've been in the trenches, shaping teams from the ground up, navigating rapid growth, and solving complex people challenges across various industries.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Our expertise spans the full spectrum of HR services, tailored for startups and high-growth companies. We understand the demands of fast-moving businesses and offer strategic and operational support across:
+              </p>
+              <ul className="text-lg text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+              <li>Talent Acquisition & Workforce Planning</li>
+              <li>Employer Branding & Talent Marketing</li>
+              <li>Organizational Transition & Restructuring</li>
+              <li>Performance Management & OKR Systems</li>
+              <li>HR Tech Implementation & Automation</li>
+               <li>Job Architecture & Role Benchmarking</li>
+                <li>Compensation & Benefits Structuring</li>
+                <li>Onboarding & Offboarding Workflows</li>
+                <li>Diversity, Equity & Inclusion Initiatives</li>
+                <li>Leadership Coaching & Manager Enablement</li>
+              </ul>
+            </div>
+            <p className="text-lg text-gray-700 leading-relaxed">Whether you’re building from scratch or refining existing systems, hyrloop partners with you to design scalable, future-ready HR solutions that align with your business goals. We don't just consult—we collaborate, embed, and deliver impact.</p>
             
             <div className="mt-10">
               <h3 className="text-xl font-semibold mb-4">Our Areas of Expertise</h3>
