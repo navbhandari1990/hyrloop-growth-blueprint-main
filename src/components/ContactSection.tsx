@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
+import { isPending } from 'q';
 import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/hooks/use-toast'
 import { Mail, Phone, MessageSquare } from 'lucide-react';
@@ -26,26 +27,50 @@ const ContactSection = () => {
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbyoRSPPReqFlm815SNoLrZagjp8qnykFw9W7OKegeQCxxjPeQJQbK9KdGdXWQ3ykOE/exec',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (response.ok) {
+        // Handle success
+        console.log('Form submitted successfully!');
+        toast({
+          title: 'Message Sent!',
+          description:
+            "Thank you for reaching out. We'll be in touch soon.",
+        });
+        // Clear form fields
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        // Handle errors
+        console.error('Form submission failed:', response.statusText);
+        toast({
+          title: 'Error',
+          description:
+            'There was an error sending your message. Please try again later.',
+          variant: 'destructive',
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
       toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. We'll be in touch soon."
+        title: 'Error',
+        description: 'There was an error sending your message. Please try again later.',
+        variant: 'destructive',
       });
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
   const openWhatsApp = () => {
     // Format the phone number for WhatsApp API
