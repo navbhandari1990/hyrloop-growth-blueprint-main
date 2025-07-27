@@ -41,11 +41,42 @@ const TestimonialsSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-hyrloop-blue/10 text-hyrloop-blue hover:bg-hyrloop-blue/20 px-4 py-2 text-sm">Client Success</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Client</h2>
+          {/* Container for horizontal images */}
+          <div className="flex justify-center items-center space-x-6 mb-6">
+            <img
+              src="/images/client_logo.jpeg"
+              alt="QTEN logo"
+              className="w-24 h-auto"
+            />
+            <img
+              src="/images/sterco_client.png"
+              alt="Sterco logo"
+              className="w-24 h-auto"
+            />
+            <img
+              src="/images/logo_appzlogic.png"
+              alt="Appzlogic logo"
+              className="w-24 h-auto"
+            />
+            <img src="/images/liberin_logo.png"
+              alt="liberin logo"
+              className="w-24 h-auto"
+            />
+ <img src="/images/Mrida hi-res Logo.avif"
+              alt="Appzlogic logo"
+              className="w-24 h-auto"
+            />
+ <img src="/images/2careai.svg"
+              alt="2care.ai logo"
+              className="w-24 h-auto"
+            />
+
+          </div>
           <div className="w-20 h-1 bg-hyrloop-blue mx-auto rounded-full"></div>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        {/* <div className="relative max-w-4xl mx-auto">
           <div className="overflow-hidden">
             <div className="transition-opacity duration-500">
               <Card className="border-0 shadow-lg bg-white">
@@ -68,8 +99,8 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="flex justify-center mt-8 space-x-4">
-            <button 
-              onClick={handlePrevious} 
+            <button
+              onClick={handlePrevious}
               className="p-2 rounded-full bg-white border border-gray-200 shadow hover:bg-hyrloop-gray transition-colors"
               aria-label="Previous testimonial"
             >
@@ -87,15 +118,15 @@ const TestimonialsSection = () => {
                 />
               ))}
             </div>
-            <button 
-              onClick={handleNext} 
+            <button
+              onClick={handleNext}
               className="p-2 rounded-full bg-white border border-gray-200 shadow hover:bg-hyrloop-gray transition-colors"
               aria-label="Next testimonial"
             >
               <ArrowRight className="h-5 w-5 text-gray-700" />
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

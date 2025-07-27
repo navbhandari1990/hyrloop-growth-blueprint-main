@@ -19,6 +19,9 @@ const NotFound = () => {
         <a href="/" className="text-blue-500 hover:text-blue-700 underline">
           Return to Home
         </a>
+        <p className="text-sm text-gray-500 mt-4">
+          If you believe this is an error, please contact sandeep.latwal@hyrloop.com
+        </p>
       </div>
     </div>
   );

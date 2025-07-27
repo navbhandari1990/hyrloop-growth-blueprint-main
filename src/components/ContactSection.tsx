@@ -94,7 +94,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg">Email Us</h4>
-                  <p className="text-gray-600">info@hyrloop.com</p>
+                  <p className="text-gray-600">sandeep.latwal@hyrloop.com</p>
                 </div>
               </div>
               
