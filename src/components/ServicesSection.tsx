@@ -33,13 +33,13 @@ const ServicesSection = () => {
         },
         {
             icon: PhosphorIcons.ListChecks,
-            title: "Specialized Hiring Programs",
-            description: "Tailored hiring programs including volume recruitment and remote workforce strategies.",
+            title: "GCC Global Capability Center Setup Services",
+            description: "Comprehensive support for establishing and scaling Global Capability Centers with end-to-end talent solutions.",
             subServices: [
-                "Volume & Bulk Hiring",
-                "Campus Recruitment Programs",
-                "C-Suite & Leadership Placement",
-                "Remote & Hybrid Workforce Solutions"
+                "GCC Strategy & Setup Consulting",
+                "Talent Acquisition for GCC Roles",
+                "Cross-Cultural Team Integration",
+                "GCC Operations & Compliance Management"
             ],
             color: "bg-gradient-to-br from-green-500 to-emerald-500"
         },
